@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:my_bottom_menu_example/pages/dashboard_page.dart';
 import 'package:my_bottom_menu_example/pages/login_page.dart';
 
+import 'bindings/bindings.dart';
 import 'pages/dashboard_nav_drawer.dart';
 
 void main() {
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/dashboard',
-          page: () => DashboardNavDrawer(),
+          page: () => DashboardPage(),
+          binding: MyBindings()
         ),
       ],
     );
